@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Document</title>
+</head>
+<body class="">
+  <div class="overlay">
+  </div>
+  <div class="menu-mobile">
+    <div class="container menu-mobile__header">
+      <button class="menu-toggle" id="closeButton">
+        <svg xmlns="http://www.w3.org/2000/svg" class="menu-toggle__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <header class="header">
+    <div class="container header__wrapper">
+      <div class="logo">
+        <img class="logo__img" src="image/logo-light-side-by-side.png" alt="Logo de ReportManager">
+      </div>
+      <nav class="nav">
+        <ul class="nav__list" role="list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link" data-ref="home">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#subscription" class="nav__link" data-ref="subscription">Assinatura</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about-us" class="nav__link" data-ref="about-us">Sobre nós</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact-us" class="nav__link" data-ref="contact-us">Contate-nos</a>
+          </li>
+        </ul>
+      </nav>
+      <button id="menu-toggle" class="menu-toggle">
+        <svg xmlns="http://www.w3.org/2000/svg" class="menu-toggle__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+  <main class="main">
+    <section id="home">
+      <div class="container hero">
+        <div class="hero__img">
+          <img src="image/light-logo-on-top.png" alt="logo do reportmanager">
+        </div>
+        <div class="hero__info">
+          <div class="hero__text">
+            <h1>Agregue valor ao seu ambiente de monitoramento</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis praesentium harum magni perspiciatis repellat. In, suscipit maiores animi, eaque, facilis voluptas praesentium iste itaque eos voluptatem dolor ipsum vero quibusdam.
+            </p>
+          </div>
+          <a href="#subscription" class="btn btn--link">Vamos lá</a>
+        </div>
+      </div>
+      <div class="container combo combo--inverted">
+        <div class="combo__img">
+          <img src="image/light-logo-on-top.png" alt="logo do reportmanager">
+        </div>
+        <div class="combo__text">
+          <h2>Placeholder</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque officia placeat, similique nam enim, aut cum ad accusamus quia ex error quas hic officiis voluptate quasi quaerat, assumenda excepturi vitae.
+          </p>
+        </div>
+      </div>
+      <div class="container combo">
+        <div class="combo__img">
+          <img src="image/light-logo-on-top.png" alt="logo do reportmanager">
+        </div>
+        <div class="combo__text">
+          <h2>Placeholder</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, id, ducimus minima magnam laboriosam rem iusto numquam rerum fugiat explicabo voluptatum odio provident delectus nihil dolorum fuga aliquid molestias est.
+          </p>
+         </div> 
+      </div>
+      <div class="container combo combo--inverted">
+        <div class="combo__img">
+          <img src="image/light-logo-on-top.png" alt="logo do reportmanager">
+        </div>
+        <div class="combo__text">
+          <h2>Placeholder</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium aut repellat, fuga quae atque natus quasi quia molestiae, nemo eligendi laboriosam labore. Iure sunt, officiis sequi accusamus placeat in architecto.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="container"></div>
+    </section>
+    <section id="subscription" class="subscription">
+      <div class="container container--center subscription__heading">
+        <h2>Planos de Assinatura</h2>
+      </div>
+      <div class="container">
+        <div class="plan-card">
+          <div class="plan-card__title">
+            <h3>Mensal</h3>
+          </div>
+          <p class="plan__cost">R$ 119,00</p>
+          <a href="#" class="btn btn--link">Assinar</a>
+        </div>
+        <div class="plan-card">
+          <div class="plan-card__title">
+            <h3>Anual</h3>
+          </div>
+          <p class="plan__cost">R$ 85,00</p>
+          <a href="#" class="btn btn--link">Assinar</a>
+        </div>
+      </div>
+    </section>
+    <section id="contact-us" class="contact-us">
+      <div class="container container--center contact-us__heading">
+        <h2>Contate-nos</h2>
+      </div>
+      <div class="container container--center">
+        <form class="form" action="">
+          <h3 class="form__title">Formulário</h2>
+            <div class="form__group">
+              <div class="form__item">
+                <label class="form__label" for="nome">Nome</label>
+                <input class="form__input" type="text" name="nome" id="nome">
+              </div>
+              <div class="form__item">
+                <label class="form__label" for="sobrenome">Sobrenome</label>
+                <input class="form__input" type="text" name="sobrenome" id="sobrenome">
+              </div>
+            </div>
+          <div class="form__item">
+            <label class="form__label" for="email">E-mail</label>
+            <input class="form__input" type="email" name="email" id="email">
+          </div>
+          <div class="form__item">
+            <label class="form__label" for="form__label">Assunto</label>
+            <input class="form__input" type="text" name="" id="">
+          </div>
+          <div class="form__item">
+            <label class="form__label" for="form__label">Mensagem</label>
+            <textarea class="form__input form__input--textarea" type="text" name="mensagem" id="mensagem" placeholder="Deixe-nos uma mensagem..."></textarea>
+          </div>
+          <button class="btn" type="submit">Enviar mensagem</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container footer">
+      <p>Eleven Soluções em Tecnologia - Todos os direitos reservados</p>
+    </div>
+  </footer>
+</body>
+<script src="index.js"></script>
+</html>
