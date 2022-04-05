@@ -240,6 +240,9 @@ main > section {
   margin-bottom: 3rem;
   /* overflow-x: hidden; */
 }
+.about {
+  padding-bottom: var(--header-height);
+}
 .subscription {
   padding-bottom: 3.5rem;
   background-color: var(--dark-blue-300);
@@ -267,6 +270,10 @@ main > section {
 .footer {
   padding: 3rem 0;
   text-align: center;
+}
+.socials {
+  margin-bottom: 3rem;
+  font-size: var(--fs-600);
 }
 .btn {
   --btn-timing: 300ms;
@@ -318,6 +325,7 @@ main > section {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  padding: 0 1rem;
   height: var(--header-height);
 }
 .header__wrapper {
@@ -365,6 +373,9 @@ main > section {
   -moz-transition: opacity 1s ease, transform 1s ease;
   -o-transition: opacity 1s ease, transform 1s ease;
   transition: opacity 1s ease, transform 1s ease;
+}
+.about__heading {
+  margin-bottom: 3rem;
 }
 .subscription__heading {
   color: var(--text-inverted);
@@ -419,6 +430,12 @@ main > section {
   padding: 0.375em 0.75em;
   border: 1px solid var(--light-gray);
   outline-color: var(--dark-blue-100);
+}
+.social__link {
+  display: inline-block;
+  padding: 1rem;
+  text-decoration: none;
+  color: var(--dark-blue-100);
 }
 .btn::after {
   /* Optimal box-shadow animation */

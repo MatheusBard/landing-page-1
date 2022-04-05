@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
 
   <title>Document</title>
@@ -15,10 +17,7 @@
   <div class="menu-mobile">
     <div class="menu-mobile__header">
       <button class="menu-toggle" id="closeButton">
-        <svg xmlns="http://www.w3.org/2000/svg" class="menu-toggle__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="18" y1="6" x2="6" y2="18"></line>
-          <line x1="6" y1="6" x2="18" y2="18"></line>
-        </svg>
+        <i class="fa-solid fa-xmark menu-toggle__icon"></i>
       </button>
     </div>
     <nav class="nav nav-menu">
@@ -60,11 +59,7 @@
         </ul>
       </nav>
       <button id="menu-toggle" class="menu-toggle">
-        <svg xmlns="http://www.w3.org/2000/svg" class="menu-toggle__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="3" y1="12" x2="21" y2="12"></line>
-          <line x1="3" y1="6" x2="21" y2="6"></line>
-          <line x1="3" y1="18" x2="21" y2="18"></line>
-        </svg>
+        <i class="fa-solid fa-bars menu-toggle__icon"></i>
       </button>
     </div>
   </header>
@@ -118,8 +113,17 @@
         </div>
       </div>
     </section>
-    <section id="about">
-      <div class="container"></div>
+    <section id="about" class="about">
+      <div class="container container--center about__heading">
+        <h2>Sobre Nós</h2>
+      </div>
+      <div class="container container--center">
+        <p class="about__info">
+          Criada em 2012, inicialmente focada na prestação de serviços de consultoria e suporte para Provedores de internet regionais. 
+          Em 2014 iniciamos a parceira com a Paessler, desenvolvedores do PRTG Network Monitor. 
+          Em 2016 fomos agraciados com o nivel Gold de parceria, sendo o primeiro parceiro com esse nível em território Brasileiro.
+        </p>
+      </div>
     </section>
     <section id="subscription" class="subscription">
       <div class="container container--center subscription__heading">
@@ -184,6 +188,20 @@
   </main>
   <footer>
     <div class="container footer">
+      <div class="socials">
+        <a href="https://www.facebook.com/11eleve11/" class="social__link">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://www.youtube.com/channel/UCoFK78Nb8SVjkx93LiGoZ5g/featured?view_as=subscriber" class="social__link">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=5551982650007&text=Obrigado%20pelo%20seu%20contato.%20" class="social__link">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/eleven-solu%C3%A7%C3%B5es-em-tecnologia-767a15136/" class="social__link">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+      </div>
       <p>Eleven Soluções em Tecnologia - Todos os direitos reservados</p>
     </div>
   </footer>
