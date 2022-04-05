@@ -190,6 +190,8 @@ main > section {
   position: fixed;
   top: 0;
   right: 0;
+  display: flex;
+  flex-direction: column;
   width: 15rem;
   height: 100vh;
   background-color: var(--white);
@@ -219,27 +221,35 @@ main > section {
   color: var(--text);
   z-index: 1;
 }
-.nav {
+.nav-header {
   display: none;
+}
+.main {
+  overflow-x: hidden;
 }
 .hero {
   position: relative;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   height: calc(100vh - var(--header-height));
-  overflow-x: hidden;
 }
 .combo {
   margin-bottom: 3rem;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 .subscription {
   padding-bottom: 3.5rem;
   background-color: var(--dark-blue-300);
 }
 .plan-card {
+  width: min(100%, 25rem);
+  padding: 2rem;
   background-color: var(--background);
+  border-radius: 1rem;
+  text-align: center;
 }
 .contact-us {
   background-image: url("image/background.PNG");
@@ -273,25 +283,27 @@ main > section {
 }
 /* Tablet */
 @media (min-width: 768px) {
-
+  .plan-card {
+    max-width: 20rem;
+  }
 }
 /* Laptop */
 @media (min-width: 992px) {
   .menu-toggle {
     display: none;
   }
-  .nav {
+  .nav-header {
     display: block;
   }
   .hero {
     flex-direction: row;
+    justify-content: flex-start;
   }
   .combo {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    overflow-x: hidden;
   }
   .form {
     width: 58%;
@@ -358,6 +370,25 @@ main > section {
   color: var(--text-inverted);
   margin-bottom: 3rem;
 }
+.subscription__plans {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+.plan-card__title,
+.plan-card__cost {
+  margin-bottom: 2rem;
+}
+.plan-card__cost > span{
+  font-size: var(--fs-800);
+  font-weight: var(--fw-700);
+  color: var(--dark-blue-100);
+}
+.plan-card__description {
+  margin-bottom: 1rem;
+  font-size: var(--fs-300);
+}
 .contact-us > * {
   position: relative;
 }
@@ -414,6 +445,10 @@ main > section {
 }
 /* Tablet */
 @media (min-width: 768px) {
+  .subscription__plans {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
   .form__group {
     display: flex;
     gap: 2rem;
@@ -429,6 +464,8 @@ main > section {
   }
   .hero__img {
     position: absolute;
+    right: 0;
+    transform: translateX(33%);
     z-index: -1;
   }
 }
@@ -444,6 +481,9 @@ main > section {
 }
 .menu-mobile--show {
   transform: translateX(0);
+}
+.nav__list--menu {
+  flex-direction: column;
 }
 .nav__link--active {
   color: var(--dark-blue-100);

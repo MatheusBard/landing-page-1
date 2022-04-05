@@ -13,7 +13,7 @@
   <div class="overlay">
   </div>
   <div class="menu-mobile">
-    <div class="container menu-mobile__header">
+    <div class="menu-mobile__header">
       <button class="menu-toggle" id="closeButton">
         <svg xmlns="http://www.w3.org/2000/svg" class="menu-toggle__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <line x1="18" y1="6" x2="6" y2="18"></line>
@@ -21,13 +21,29 @@
         </svg>
       </button>
     </div>
+    <nav class="nav nav-menu">
+      <ul class="nav__list nav__list--menu" role="list">
+        <li class="nav__item">
+          <a href="#home" class="nav__link" data-ref="home">Home</a>
+        </li>
+        <li class="nav__item">
+          <a href="#subscription" class="nav__link" data-ref="subscription">Assinatura</a>
+        </li>
+        <li class="nav__item">
+          <a href="#about-us" class="nav__link" data-ref="about-us">Sobre nós</a>
+        </li>
+        <li class="nav__item">
+          <a href="#contact-us" class="nav__link" data-ref="contact-us">Contate-nos</a>
+        </li>
+      </ul>
+    </nav>
   </div>
   <header class="header">
     <div class="container header__wrapper">
       <div class="logo">
         <img class="logo__img" src="image/logo-light-side-by-side.png" alt="Logo de ReportManager">
       </div>
-      <nav class="nav">
+      <nav class="nav nav-header">
         <ul class="nav__list" role="list">
           <li class="nav__item">
             <a href="#home" class="nav__link" data-ref="home">Home</a>
@@ -107,21 +123,27 @@
     </section>
     <section id="subscription" class="subscription">
       <div class="container container--center subscription__heading">
-        <h2>Planos de Assinatura</h2>
+        <h2>Assinatura</h2>
       </div>
-      <div class="container">
+      <div class="container subscription__plans">
         <div class="plan-card">
           <div class="plan-card__title">
             <h3>Mensal</h3>
           </div>
-          <p class="plan__cost">R$ 119,00</p>
+          <p class="plan-card__cost"><span>R$ 119,00</span> / mês</p>
+          <p class="plan-card__description">
+            Pagamento realizado mensalmente.
+          </p>
           <a href="#" class="btn btn--link">Assinar</a>
         </div>
         <div class="plan-card">
           <div class="plan-card__title">
             <h3>Anual</h3>
           </div>
-          <p class="plan__cost">R$ 85,00</p>
+          <p class="plan-card__cost"><span>R$ 85,00</span> / mês</p>
+          <p class="plan-card__description">
+            Pagamento realizado anualmente. Você será informado quando o seu acesso estiver proximo do vencimento.
+          </p>
           <a href="#" class="btn btn--link">Assinar</a>
         </div>
       </div>
