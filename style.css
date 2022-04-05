@@ -258,7 +258,7 @@ main > section {
   text-align: center;
 }
 .contact-us {
-  background-image: url("image/background.PNG");
+  background-image: url("assets/background.png");
   background-size: cover;
   background-attachment: fixed;
   position: relative;
