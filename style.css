@@ -248,6 +248,10 @@ main > section {
   background-color: var(--dark-blue-300);
 }
 .plan-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 22.5rem;
   width: min(100%, 25rem);
   padding: 2rem;
   background-color: var(--background);
