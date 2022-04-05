@@ -103,7 +103,7 @@ select {
   --white: 	hsl(0, 0%, 99%);
 
   --blue-gradient: linear-gradient(
-    22.5deg, 
+    90deg, 
     var(--dark-blue-300) 0%, 
     var(--dark-blue-200) 15%, 
     var(--dark-blue-100) 50%, 
