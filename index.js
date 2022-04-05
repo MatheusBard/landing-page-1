@@ -41,14 +41,14 @@ if(!!window.IntersectionObserver) {
 
   function highlightHandler(entry) {
     const id = entry.target.id;
-    const currentlyActive = document.querySelector('.nav__link--active');
-    const shouldBeActive = document.querySelector('[data-ref=' + id + ']');
+    const currentlyActive = document.querySelectorAll('.nav__link--active');
+    const shouldBeActive = document.querySelectorAll('[data-ref=' + id + ']');
 
     if (currentlyActive) {
-      currentlyActive.classList.remove('nav__link--active');
+      currentlyActive.forEach(link => { link.classList.remove('nav__link--active') });
     }
     if (shouldBeActive) {
-      shouldBeActive.classList.add('nav__link--active');
+      shouldBeActive.forEach(link => { link.classList.add('nav__link--active') });
     }
   }
 }

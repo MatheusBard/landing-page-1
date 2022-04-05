@@ -303,6 +303,9 @@ main > section {
   .menu-toggle {
     display: none;
   }
+  .nav-menu {
+    display: none;
+  }
   .nav-header {
     display: block;
   }
