@@ -55,9 +55,12 @@ if(!!window.IntersectionObserver) {
 
 // || Menu Mobile
 const menu = document.querySelector(".menu-mobile");
+const menuLinks = document.querySelectorAll(".nav__list--menu .nav__link");
 const toggle = document.querySelector("#menu-toggle");
 const overlay = document.querySelector(".overlay");
 const closeButton = document.querySelector("#closeButton");
+
+const menuItems = [overlay, closeButton, menuLinks];
 
 toggle.addEventListener("click", () => {
   menu.classList.add("menu-mobile--show");
@@ -73,3 +76,10 @@ closeButton.addEventListener("click", () => {
   menu.classList.remove("menu-mobile--show");
   overlay.classList.remove("overlay--show");
 });
+
+menuLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    menu.classList.remove("menu-mobile--show");
+    overlay.classList.remove("overlay--show");
+  });
+})
